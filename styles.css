@@ -1,0 +1,172 @@
+@charset "UTF-8";  /* If you have a charset declaration, it comes first */
+@import url("styles.css");  /* @import rules come next */
+
+html,body{
+
+    overflow: hidden;
+    background-color: black;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select:none ;
+    user-zoom: none;
+    -webkit-user-zoom: none;
+    }
+    
+    .row{
+    display: flex;
+    flex-flow: row nowrap;
+    }
+    
+    
+    .col{
+        display: flex;
+        flex-flow: column nowrap;
+        }
+        
+        .againcol{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            }
+            
+    .div1{
+    display:block;
+        height:97vh;
+        width:70vw;
+    
+    }
+    
+    .div2{
+        display:block;
+        height:97vh;
+        width:30vw;
+       
+    }
+    
+    .vidclass1{
+        user-select: none;
+        user-zoom: none;
+        display:none;
+        height: 100%;
+        object-fit: fill;
+        width: 100%;
+    }
+    
+    .vidclass2{
+        display:none;
+        height: 100%;
+        object-fit: fill;
+        width: 100%;
+    }
+    
+    .buttons{
+    height:100%;
+    width:100%;
+    font-size: 100%;
+       text-emphasis: bold;
+       font-weight: bold;
+       background-color: rgb(69, 69, 69);
+       border-color: rgb(91, 91, 91);
+       border: 3%;
+    user-select: none;
+    user-zoom: none;
+    -webkit-user-select: none;
+    -webkit-user-zoom: none;
+    -moz-user-focus: none;
+    }
+    
+    .labelrow{
+        font-size: 100%;
+       text-emphasis: bold;
+       font-weight: bold;
+       background-color: rgb(69, 69, 69);
+       border-color: rgb(91, 91, 91);
+       height: 6vh;
+    }
+    
+    .speeddisplay{
+        height:100%;
+    width:100%;
+        font-size: 150%;
+        text-emphasis: bold;
+        font-weight: bold;
+        text-align: center;
+    
+        background-color: rgb(69, 69, 69);
+        border-color: rgb(91, 91, 91);
+    }
+    
+    .aboutclass{
+        font-size: 120%;
+    height:100%;
+    width: 100%;
+    display: block;
+    font-stretch: normal;
+    
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    }
+    
+    .ctrlrow1{
+        display:flex;
+        flex-flow: row nowrap;
+        height:20vh
+        
+        }
+    
+    .ctrlrow2{
+    display:flex;
+    flex-flow: row nowrap;
+    height:10vh
+    
+    }
+    
+    .ctrlrow2{
+    display:flex;
+    flex-flow: row nowrap;
+    height:3vh
+        
+    }
+    
+    .ctrlrow3{
+    display:flex;
+    flex-flow: row nowrap;
+    height:10vh
+    
+    }
+    .ctrlrow4{
+        display:flex;
+        flex-flow: row nowrap;
+        height:10vh
+        
+        }
+    .ctrlrow5{
+    display:flex;
+    flex-flow: row nowrap;
+    height:10vh
+    }
+    
+    .ctrlrow6{
+        display:flex;
+        flex-flow: row nowrap;
+        height:10vh
+        }
+    
+        .ctrlrow7{
+            display:flex;
+            flex-flow: row nowrap;
+            height:10vh
+            }
+    
+    
+            .ctrlrow8{
+                display:flex;
+                flex-flow: row nowrap;
+                height:10vh
+                } 
+                
+    .ctrlrow9{
+    display:flex;
+    flex-flow: row nowrap;
+    height:10vh
+    }

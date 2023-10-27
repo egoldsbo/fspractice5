@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="row">
+    <div class="div1">
+        <video id="videoPlayer" class="vidclass1" src="" preload="auto" muted></video>
+        <div id="aboutInfo" class="aboutclass" >
+<p>
+this webpage works best when you INSTALL AS AN APP on your device.
+</p>
+<p>
+Android: upper right hand menu- add to homescreen
+</p>
+<p>
+iOS: -in safari only -share -add to homepage 
+</p>
+<p>
+Important notes:
+</p>
+<p>
+I am not a native ASL user. My fingerspelling technique shouldn't be taken as an example of what-to-do.
+</p>
+<p>
+This website provides buttons to look-up the fingerspelled word. keep in mind that ASL signs do not (usually)
+represent english words. for example the sign meaning "to move quickly with ones legs" (run) can not be used to mean
+"run a store"
+</p>
+<p>
+American Sign Language is its own natural language with its own words, grammar, culture etc....
+</p>
+<p>
+for more information about ASL including free lessons I highly reccomend the lessons available for free at
+</p>
+<p>
+https://www.lifeprint.com/asl101/lessons/lessons.htm
+</p>
+<p>
+the list of words for the "most common signs" wordsets were taken from <p>https://www.handspeak.com/word/most-used/</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="div2">
+        <div class="col">
+            <div class="ctrlrow1" >    
+                <div class="againcol">                   
+                <button class="buttons" onclick="playAgain()" >again</button>
+                <button class="buttons" onclick="playSlower()" >again slow</button>
+                </div>
+                <button class="buttons" onclick="fetchRandomVideo()">next</button>
+            </div>
+            <div class="ctrlrow3" >                       
+                <button onclick="revealVideoName()" id="revealword" class="buttons">REVEAL FILE NAME</button>
+            </div>    
+            <div class="labelrow" >                       
+                <div class="buttons">lookup sign:</div>
+            </div>          
+            <div class="ctrlrow4" >                       
+                <button class="buttons" onclick="openInNewTab('https://www.signasl.org/sign/')">signasl</button>
+                <button class="buttons"onclick="openInNewTab('https://aslsignbank.haskins.yale.edu/signs/search/?search=&keyword=')">signbank</button>
+            </div>   
+            <div class="ctrlrow5" >                       
+                <button class="buttons" onclick="openInNewTab('https://www.signingsavvy.com/search/')">signsavvy</button>
+                <button class="buttons" onclick="">lifeprint</button>
+            </div>   
+            <div class="labelrow" >                       
+                <div class="buttons">playbackspeed:</div>
+            </div>   
+
+            <div class="ctrlrow6" >                       
+                <button class="buttons" onclick="changeSpeed(0)">-</button>
+                <div id="currentSpeed" class="speeddisplay">1x</div>
+                <button class="buttons" onclick="changeSpeed(1)">+</button>
+            </div>   
+            <div class="labelrow" >                       
+                <div class="buttons">select word set:</div>
+            </div>   
+            <div class="ctrlrow8" >  
+                <select class="buttons" id="dirSelect" onchange="changeWordset()">
+                    <option value="mostcommonsigns">mostcommonsigns</option>
+                    <option value="mostcommonsigns2">mostcommonsigns2</option>
+                    <option value="inthewild">inthewild</option>
+                    <option value="dailymoth">dailymoth</option>
+                  
+                </select>
+            </div>
+                <div class="ctrlrow9" > 
+                    <button class="buttons" onclick="aboutSite()">About</button>
+                    </div>
+            </div>
+
+</div>
+</div>
+</div>
+<script src="script2.js"></script>
+
+</body>
+</html>
