@@ -2,7 +2,7 @@ import os
 import json
 
 # Directory to scan for subfolders and files
-base_directory = '.'
+base_directory = './vids'
 
 # JavaScript file to append
 js_to_append = 'script.js'

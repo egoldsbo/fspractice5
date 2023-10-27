@@ -34,7 +34,7 @@ buttonElement.onmousedown = () => {
                     const videoElement = document.getElementById("videoPlayer");
              
                     videoElement.style.display = "block";
-                    videoElement.src = currentdirectory+"/"+currentwordset[wordsetindex];
+                    videoElement.src = currentdirectory+"/vids/"+currentwordset[wordsetindex];
                     const videoPath = videoElement.src;
                     videoName = videoPath.split("/").pop();
                     videoElement.playbackRate = speeds[speedIndex];
