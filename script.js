@@ -32,9 +32,9 @@ buttonElement.onmousedown = () => {
                     }
 
                     const videoElement = document.getElementById("videoPlayer");
-             
+                    console.log("vids/"+currentdirectory+"/"+currentwordset[wordsetindex];);
                     videoElement.style.display = "block";
-                    videoElement.src = currentdirectory+"/vids/"+currentwordset[wordsetindex];
+                    videoElement.src = "vids/"+currentdirectory+"/"+currentwordset[wordsetindex];
                     const videoPath = videoElement.src;
                     videoName = videoPath.split("/").pop();
                     videoElement.playbackRate = speeds[speedIndex];
