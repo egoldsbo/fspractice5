@@ -24,17 +24,25 @@ buttonElement.onmousedown = () => {
             };
 
         function fetchRandomVideo() {
+
+            if(currentwordset.length==0){
+
+                currentwordset=mostcommonsigns;
+
+            }
             
                     wordsetindex++;
-                    if(wordsetindex>currentwordset.length){
+                    if(wordsetindex>=currentwordset.length){
                         wordsetindex=0;
+                        shuffleArray(currentwordset)
 
                     }
 
                     const videoElement = document.getElementById("videoPlayer");
-                    console.log("vids/"+currentdirectory+"/"+currentwordset[wordsetindex];);
+                    var playdirectory="vids/"+currentdirectory+"/"+currentwordset[wordsetindex];
+                    console.log(playdirectory);
                     videoElement.style.display = "block";
-                    videoElement.src = "vids/"+currentdirectory+"/"+currentwordset[wordsetindex];
+                    videoElement.src = playdirectory;
                     const videoPath = videoElement.src;
                     videoName = videoPath.split("/").pop();
                     videoElement.playbackRate = speeds[speedIndex];
