@@ -1,0 +1,8 @@
+# Set the directory path
+$path = "C:\workspace\fingerspelling5\vids\inthewild"  # Update this with your desired path
+
+# Find and delete files ending with _ and a number
+Get-ChildItem -Path $path -File | Where-Object { $_.Name -match '_\d+\.\w+$' } | Remove-Item -Force
+
+# Output a message
+Write-Host "Files deleted successfully."
