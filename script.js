@@ -5,6 +5,7 @@ var wordsetindex = 0;
 let originalPlaybackRate = 1;
 var speeds = [.12, .25, .5, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3];
 var speedIndex = 3;
+var slowerindex=2;
 var videoName = "something";
 
 // Managing two video elements
@@ -49,6 +50,7 @@ function generateVideoPath() {
 }
 
 function switchVideos() {
+    slowerindex=2;
     // Calculate next video index
     let nextVideoIndex = (activeVideoIndex + 1) % videoElements.length;
 
@@ -107,9 +109,14 @@ function playAgain() {
 function playSlower() {
     const video = videoElements[activeVideoIndex];
     video.style.display = "block";
-    video.playbackRate = 0.5;
+    video.playbackRate = speeds[slowerindex];
+    if(slowerindex>0){
+    slowerindex--;}
     video.currentTime = 0;
     video.play();
+
+
+
 }
 
 function openInNewTab(urlBase) {
