@@ -1,6 +1,7 @@
 var currentdirectory = "mostcommonsigns";
 var currentwordset = [];
 var wordsetindex = 0;
+var clickCount = 0;
 
 let originalPlaybackRate = 1;
 var speeds = [.12, .25, .5, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3];
@@ -65,6 +66,11 @@ function switchVideos() {
     
     // Swap active video index
     activeVideoIndex = nextVideoIndex;
+    
+    clickCount++;
+    console.log("ping")
+    document.getElementById("nextbutton").textContent = "Next (" + clickCount + ")";
+    console.log(document.getElementById("nextbutton").textContent);
 }
 
 function changeWordset() {
