@@ -53,13 +53,6 @@ html,body{
         width: 100%;
     }
     
-    .vidclass2{
-        display:none;
-        height: 100%;
-        object-fit: fill;
-        width: 100%;
-    }
-    
     .buttons{
     height:100%;
     width:100%;
