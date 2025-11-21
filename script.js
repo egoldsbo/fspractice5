@@ -30,7 +30,7 @@ buttonElement.ontouchstart = () => {
 };
 
 buttonElement.onmouseup = () => {
-    buttonElement.textContent = "REVEAL FILE NAME";
+    buttonElement.textContent = "REVEAL WORD";
 };
 
 function generateVideoPath() {
