@@ -1,25 +1,47 @@
 @charset "UTF-8";  /* If you have a charset declaration, it comes first */
-@import url("styles.css");  /* @import rules come next */
 
-html,body{
-
-    overflow: hidden;
-    background-color: black;
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-user-drag: none;
-    -moz-user-select:none ;
-    user-zoom: none;
-    -webkit-user-zoom: none;
+/* annoying flexbox default */
+* {
+    min-width: 0;
+    min-height: 0;
 }
 
-.row{
+html {
+    background-color: black;
+    user-select: none;
+    overflow: hidden;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    flex-grow: 1;
+}
+
+.main-container{
+    height: 100%;
     display: flex;
     flex-flow: row nowrap;
+
+    .div1{
+        flex: 2;
+    }
+    .div2{
+        flex: 1;
+    }
+
+    @media(max-aspect-ratio: 1/1) {
+        flex-direction: column;
+        .div2 {
+            flex: 3;
+        }
+    }
 }
 
 
 .col{
+    height: 100%;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -30,23 +52,8 @@ html,body{
     width: 100%;
 }
 
-.div1{
-    display:block;
-    height:97vh;
-    width:70vw;
-
-}
-
-.div2{
-    display:block;
-    height:97vh;
-    width:30vw;
-
-}
-
 .vidclass1{
     user-select: none;
-    user-zoom: none;
     display:none;
     height: 100%;
     object-fit: contain;
@@ -63,9 +70,6 @@ html,body{
     border: 3%;
     user-select: none;
     user-zoom: none;
-    -webkit-user-select: none;
-    -webkit-user-zoom: none;
-    -moz-user-focus: none;
 }
 
 .labelrow{
@@ -73,7 +77,7 @@ html,body{
     font-weight: bold;
     background-color: rgb(69, 69, 69);
     border-color: rgb(91, 91, 91);
-    height: 6vh;
+    flex: 0.6;
 }
 
 .speeddisplay{
@@ -93,6 +97,7 @@ html,body{
     width: 100%;
     display: block;
     font-stretch: normal;
+    overflow: scroll;
 
     color: rgb(255, 255, 255);
 }
@@ -100,63 +105,63 @@ html,body{
 .ctrlrow1{
     display:flex;
     flex-flow: row nowrap;
-    height:20vh
+    flex:2;
 
 }
 
 .ctrlrow2{
     display:flex;
     flex-flow: row nowrap;
-    height:10vh
+    flex:1;
 
 }
 
 .ctrlrow2{
     display:flex;
     flex-flow: row nowrap;
-    height:3vh
+    flex:0.3;
 
 }
 
 .ctrlrow3{
     display:flex;
     flex-flow: row nowrap;
-    height:10vh
+    flex:1;
 
 }
 .ctrlrow4{
     display:flex;
     flex-flow: row nowrap;
-    height:10vh
+    flex:1;
 
 }
 .ctrlrow5{
     display:flex;
     flex-flow: row nowrap;
-    height:10vh
+    flex:1;
 }
 
 .ctrlrow6{
     display:flex;
     flex-flow: row nowrap;
-    height:10vh
+    flex:1;
 }
 
 .ctrlrow7{
     display:flex;
     flex-flow: row nowrap;
-    height:10vh
+    flex:1;
 }
 
 
 .ctrlrow8{
     display:flex;
     flex-flow: row nowrap;
-    height:10vh
+    flex:1;
 } 
 
 .ctrlrow9{
     display:flex;
     flex-flow: row nowrap;
-    height:10vh
+    flex:1;
 }
