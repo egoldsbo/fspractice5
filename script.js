@@ -35,7 +35,7 @@ buttonElement.onmouseup = () => {
 
 function generateVideoPath() {
     if (currentwordset.length === 0) {
-        currentwordset = mostcommonsigns;
+        changeWordset();
     }
 
     wordsetindex++;
@@ -86,14 +86,11 @@ function changeWordset() {
         currentwordset = dailymoth;
     } else if (dir === "inthewild") {
         currentwordset = inthewild;
+    } else if (dir === "commonwordendings") {
+        currentwordset = commonwordendings;
     }
 
-else if (dir === "commonwordendings") {
-    currentwordset = commonwordendings;
-}
-
     shuffleArray(currentwordset);
-    switchVideos(); // Automatically load and play the first video from the new wordset
 }
 
 function shuffleArray(array) {
