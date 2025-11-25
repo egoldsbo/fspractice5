@@ -102,6 +102,8 @@ function shuffleArray(array) {
 }
 
 function playAgain() {
+    const aboutInfo = document.getElementById("aboutInfo");
+    aboutInfo.style.display = "none";
     const video = videoElements[activeVideoIndex];
     video.style.display = "block";
     video.playbackRate = speeds[speedIndex];
@@ -110,6 +112,8 @@ function playAgain() {
 }
 
 function playSlower() {
+    const aboutInfo = document.getElementById("aboutInfo");
+    aboutInfo.style.display = "none";
     const video = videoElements[activeVideoIndex];
     video.style.display = "block";
     video.playbackRate = speeds[slowerindex];
@@ -117,9 +121,6 @@ function playSlower() {
     slowerindex--;}
     video.currentTime = 0;
     video.play();
-
-
-
 }
 
 function openInNewTab(urlBase) {
@@ -127,7 +128,6 @@ function openInNewTab(urlBase) {
     const videoName = videoPath.split("/").pop();
     const choppedName = videoName.slice(0, -4); // Remove last 4 chars (.mp4)
     window.open(urlBase + choppedName, '_blank');
-    
 }
 
 function changeSpeed(isIncrease) {
